@@ -32,15 +32,14 @@ int main(int argc, char *argv[])
 		while(getline(text, line))
 		{
 			file_data["lines"] += 1;
-			//while(text>>noskipws>>ch)
-    			//{
-			//for (string line : text)
-			for (character = getc(text); character != EOF; character = getc(text))
-			{
-     				file_data["characters"] += 1;
-  			}
+  		}
 			cout << file_data << endl;
 		}
+		for (character = getc(text); character != EOF; character = getc(text))
+		{
+     			file_data["characters"] += 1;
+		}
+			cout << file_data << endl;
 	}
 	
 	string map = file_data.toString();
