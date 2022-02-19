@@ -30,17 +30,15 @@ int main(int argc, char *argv[])
 		Map <string, int> file_data;
 		while(getline(text, line))
 		{
+			cout << "AAA" << endl;
 			file_data["lines"] += 1;
     			//file_name >> file_data["words"] += 1;
     			for (int index; index < line.length(); index++)
     			{
      				file_data["characters"] += 1;
   			}
-			//file_data = find_data(line, map <string, int>  file_data);
 		}
-    		//file_data = find_data(text);
 	}
-	//Output 
 	
 	string map = file_data.toString();
 	cout << map << endl;
