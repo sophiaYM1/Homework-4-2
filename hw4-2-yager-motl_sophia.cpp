@@ -27,17 +27,19 @@ int main(int argc, char *argv[])
   	else 
 	{
 		string line; 
+		char character;
 		Map <string, int> file_data;
 		while(getline(text, line))
 		{
-			cout << "AAA" << endl;
 			file_data["lines"] += 1;
-			cout << file_data << endl;
-    			//file_name >> file_data["words"] += 1;
-    			for (int index; index < line.length(); index++)
-    			{
+			//while(text>>noskipws>>ch)
+    			//{
+			//for (string line : text)
+			for (character = getc(text); character != EOF; character = getc(text))
+			{
      				file_data["characters"] += 1;
   			}
+			cout << file_data << endl;
 		}
 	}
 	
