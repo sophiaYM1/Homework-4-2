@@ -1,10 +1,10 @@
 # Makefile for the Spelling Bee project
 #****************************************************************
 
-PROG = hw4-2-yager-motl_sophia.cpp
+PROG = hw4-2-yager-motl_sophia
 
 PROGRAMS = \
-    hw4-2-yager-motl_sophia.cpp
+    hw4-2-yager-motl_sophia
 
 CPPOPTIONS = -I../StanfordCPPLib -fvisibility-inlines-hidden
 LDOPTIONS = -L../StanfordCPPLib
