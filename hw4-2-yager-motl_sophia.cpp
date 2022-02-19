@@ -15,6 +15,7 @@ int find_data(string line, map <string, int> & file_data)
     	{
      		file_data["characters"] += 1;
   	}
+	return file_data;
 }
 
 
