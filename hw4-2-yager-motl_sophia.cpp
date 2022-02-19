@@ -7,33 +7,28 @@
 
 using namespace std;
 
-int find_data(file_name)
+int find_data(string line, Map file_data)
 {
+	file_data["lines"] += 1;
+    	//file_name >> file_data["words"] += 1;
+    	for (int index; index < line.length(), index++)
+    	{
+     		file_data["characters"] += 1;
+  	}
+}
+
+
+int main(int argc, char *argv[])
+{
+	
 	//initialize map
   	Map <string, num> file_data;
   	file_data["lines"] = 0;
  	file_data["words"] = 0;
  	file_data["characters"] = 0;
 	
- 	string line;
-	
-  	while(getline(filename, line))
-	{
-		file_data["lines"] += 1;
-    		file_name >> file_data['words'] += 1;
-    		for (int index; index < line.length(), index++)
-    		{
-     			file_data["words"] += 1;
-  		}
-	}
-	file_name.close();
-}
-
-
-int main(int argc, char *argv[])
-{
+	//Check input file
 	ifstream text(argv[1]);
-	Map <string, num> file_data;
 	if(text.fail())
 	{
 		cerr << "Error opening the file.\n";
@@ -41,11 +36,18 @@ int main(int argc, char *argv[])
 	}
   	else 
 	{
-    		file_data = find_data(text);
+		string line; 
+		Map <string, num> file_data;
+		while(getline(text, line))
+		{
+			file_data = find_data(line, file_data);
+		}
+    		//file_data = find_data(text);
 	}
 	//cout << "Name of file" << setw(6) <<< text << endl;
 	//cout << "Num of lines" << setw(6) << file_data[0] << endl;
 	//cout << "Num of words" << setw(6) << file_data[1] << endl;
 	//cout << "Num of characters" << setw(6) << file_data[2] << endl;
 	
+	text.close();
   	return 0;
