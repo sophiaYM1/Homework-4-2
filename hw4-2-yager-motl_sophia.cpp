@@ -11,7 +11,7 @@ int find_data(string line, map <string, int> & file_data)
 {
 	file_data["lines"] += 1;
     	//file_name >> file_data["words"] += 1;
-    	for (int index; index < line.length(), index++)
+    	for (int index; index < line.length(); index++)
     	{
      		file_data["characters"] += 1;
   	}
@@ -22,7 +22,7 @@ int main(int argc, char *argv[])
 {
 	
 	//initialize map
-  	Map <string, num> file_data;
+  	Map <string, int> file_data;
   	file_data["lines"] = 0;
  	file_data["words"] = 0;
  	file_data["characters"] = 0;
@@ -51,3 +51,4 @@ int main(int argc, char *argv[])
 	
 	text.close();
   	return 0;
+}
