@@ -40,7 +40,7 @@ int main(int argc, char *argv[])
 		}
     		//file_data = find_data(text);
 	}
-	cout << "Name of file" << setw(6) <<< text << endl;
+	cout << "Name of file" << setw(6) << text << endl;
 	cout << "Num of lines" << setw(6) << file_data[0] << endl;
 	cout << "Num of words" << setw(6) << file_data[1] << endl;
 	cout << "Num of characters" << setw(6) << file_data[2] << endl;
