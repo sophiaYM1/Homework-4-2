@@ -7,17 +7,6 @@
 
 using namespace std;
 
-/*int find_data(string line, map <string, int> & file_data)
-{
-	file_data["lines"] += 1;
-    	//file_name >> file_data["words"] += 1;
-    	for (int index; index < line.length(); index++)
-    	{
-     		file_data["characters"] += 1;
-  	}
-	return file_data;
-}*/
-
 
 int main(int argc, char *argv[])
 {
@@ -51,10 +40,10 @@ int main(int argc, char *argv[])
 		}
     		//file_data = find_data(text);
 	}
-	//cout << "Name of file" << setw(6) <<< text << endl;
-	//cout << "Num of lines" << setw(6) << file_data[0] << endl;
-	//cout << "Num of words" << setw(6) << file_data[1] << endl;
-	//cout << "Num of characters" << setw(6) << file_data[2] << endl;
+	cout << "Name of file" << setw(6) <<< text << endl;
+	cout << "Num of lines" << setw(6) << file_data[0] << endl;
+	cout << "Num of words" << setw(6) << file_data[1] << endl;
+	cout << "Num of characters" << setw(6) << file_data[2] << endl;
 	
 	text.close();
   	return 0;
