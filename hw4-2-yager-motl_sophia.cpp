@@ -32,6 +32,7 @@ int main(int argc, char *argv[])
 		{
 			cout << "AAA" << endl;
 			file_data["lines"] += 1;
+			cout << file_data << endl;
     			//file_name >> file_data["words"] += 1;
     			for (int index; index < line.length(); index++)
     			{
