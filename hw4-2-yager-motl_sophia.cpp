@@ -7,7 +7,7 @@
 
 using namespace std;
 
-int find_data(string line, map <string, int> & file_data)
+/*int find_data(string line, map <string, int> & file_data)
 {
 	file_data["lines"] += 1;
     	//file_name >> file_data["words"] += 1;
@@ -16,7 +16,7 @@ int find_data(string line, map <string, int> & file_data)
      		file_data["characters"] += 1;
   	}
 	return file_data;
-}
+}*/
 
 
 int main(int argc, char *argv[])
@@ -41,7 +41,13 @@ int main(int argc, char *argv[])
 		Map <string, int> file_data;
 		while(getline(text, line))
 		{
-			file_data = find_data(line, map <string, int>  file_data);
+			file_data["lines"] += 1;
+    			//file_name >> file_data["words"] += 1;
+    			for (int index; index < line.length(); index++)
+    			{
+     				file_data["characters"] += 1;
+  			}
+			//file_data = find_data(line, map <string, int>  file_data);
 		}
     		//file_data = find_data(text);
 	}
