@@ -53,7 +53,7 @@ int main(int argc, char *argv[])
 	string num_1 = to_string (file_data["lines"]) ;
 	string num_2 = to_string (file_data["words"]) ;
 	string num_3 = to_string (file_data["characters"]) ;
-	string name_of_file = to_string(argv[1])
+	string name_of_file = to_string(argv[1]);
 	cout << "Name of file" << setw(6) << name_of_file << endl;
 	//cout << "Num of lines" << setw(6) << num_1 << endl;
 	//cout << "Num of words" << setw(6) << num_2 << endl;
