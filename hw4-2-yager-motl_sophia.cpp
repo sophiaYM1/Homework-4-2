@@ -37,9 +37,10 @@ int main(int argc, char *argv[])
 			file_data["lines"] += 1;
 			}
 			stringstream lineStream(line);
-       			while(getline(lineStream, line, ' '))
+       			while(getline(lineStream, word, ' '))
        		 	{
             			file_data["words"] += 1;
+				//for 
         		}
 			//file_data["characters"] += line.length();
   		}
