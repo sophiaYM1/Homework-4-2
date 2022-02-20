@@ -5,6 +5,7 @@
 #include <stdio.h> 
 #include "map.h"
 #include "vector.h"
+#include <sstream>
 
 using namespace std;
 
@@ -32,16 +33,24 @@ int main(int argc, char *argv[])
 		Map <string, int> file_data;
 		while(getline(text, line))
 		{
+			{
 			file_data["lines"] += 1;
+			}
+			stringstream lineStream(line);
+       			while(getline(lineStream, line, ' '))
+       		 	{
+            			file_data["words"] += 1;
+        		}
   		}
 			cout << file_data << endl;
+		
 		//for (char character = getc(text); character != EOF; character = getc(text))
-		for (int element = 0; element <= line.length(); element ++)
-		{
-			cout << element << endl;
-     			file_data["characters"] += 1;
-			cout << file_data << endl;
-		}
+		//for (int element = 0; element <= line.length(); element ++)
+		//{
+			//cout << element << endl;
+     			//file_data["characters"] += 1;
+			//cout << file_data << endl;
+		//}
 	}
 	
 	string map = file_data.toString();
