@@ -33,7 +33,7 @@ int main(int argc, char *argv[])
 		Map <string, int> file_data;
 		while(getline(text, line))
 		{
-			cout << line << endl;
+			//cout << line << endl;
 			{
 			file_data["lines"] += 1;
 			}
