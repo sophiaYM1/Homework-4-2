@@ -3,7 +3,8 @@
 #include <iomanip>
 #include <string>
 #include <stdio.h> 
-#include <map.h>
+#include "map.h"
+#include "vector.h"
 
 using namespace std;
 
@@ -35,7 +36,7 @@ int main(int argc, char *argv[])
   		}
 			cout << file_data << endl;
 		//for (char character = getc(text); character != EOF; character = getc(text))
-		for (int element = 0; element <= line.length(); element ++)
+		for (int element = 0; element <= text.length(); element ++)
 		{
      			file_data["characters"] += 1;
 		}
