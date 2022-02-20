@@ -50,9 +50,10 @@ int main(int argc, char *argv[])
 	}
 	
 	//string map = file_data.toString();
-	string num_l = file_data.get(0);
-	string num_2 = file_data.get(1);
-	string num_3 = file_data.get(2);
+	string num_1 = to_string (file_data["words"]) ;
+	//string num_l = file_data.get(0);
+	//string num_2 = file_data.get(1);
+	//string num_3 = file_data.get(2);
 	//cout << "Name of file" << setw(6) << text << endl;
 	//cout << "Num of lines" << setw(6) << num_1 << endl;
 	//cout << "Num of words" << setw(6) << num_2 << endl;
