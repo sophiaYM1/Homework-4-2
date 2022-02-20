@@ -41,6 +41,13 @@ int main(int argc, char *argv[])
        		 	{
             			file_data["words"] += 1;
         		}
+			for(i=0; line[i] != '\0'; i++)
+			{
+        			if(line[i]!=' ')
+       			{
+           			file_data["characters"] += 1;
+        		}
+    			}
   		}
 			cout << file_data << endl;
 		
@@ -54,7 +61,6 @@ int main(int argc, char *argv[])
 	}
 	
 	string map = file_data.toString();
-	cout << map << endl;
 	//string num_l = map.get(0);
 	//string num_2 = map.get(1);
 	//string num_3 = map.get(2);
