@@ -33,12 +33,11 @@ int main(int argc, char *argv[])
 		Map <string, int> file_data;
 		while(getline(text, line))
 		{
-			//cout << line << endl;
 			{
 			file_data["lines"] += 1;
 			}
 			stringstream lineStream(line);
-       			while(getline(lineStream, line))
+       			while(getline(lineStream, line, ' ')
        		 	{
             			file_data["words"] += 1;
         		}
