@@ -41,9 +41,9 @@ int main(int argc, char *argv[])
        		 	{
             			file_data["words"] += 1;
         		}
-			for(i=0; line[i] != '\0'; i++)
+			for(int index=0; line[index] != '\0'; i++)
 			{
-        			if(line[i]!=' ')
+        			if(line[index]!=' ')
        			{
            			file_data["characters"] += 1;
         		}
