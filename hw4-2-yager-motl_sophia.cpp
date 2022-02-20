@@ -5,7 +5,8 @@
 
 using namespace std;
 
-
+/*This function returns the total count of lines, words, and characters of a text file. INPUT: This filename and a user-chosen text file. 
+OUTPUT: Total count of these elements to the user.*/
 int main(int argc, char *argv[])
 {
 	
