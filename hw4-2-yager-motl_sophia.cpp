@@ -41,7 +41,7 @@ int main(int argc, char *argv[])
        		 	{
             			file_data["words"] += 1;
         		}
-			for(int index=0; line[index] != '\0'; i++)
+			for(int index=0; line[index] != '\0'; index++)
 			{
         			if(line[index]!=' ')
        			{
@@ -50,14 +50,6 @@ int main(int argc, char *argv[])
     			}
   		}
 			cout << file_data << endl;
-		
-		//for (char character = getc(text); character != EOF; character = getc(text))
-		//for (int element = 0; element <= line.length(); element ++)
-		//{
-			//cout << element << endl;
-     			//file_data["characters"] += 1;
-			//cout << file_data << endl;
-		//}
 	}
 	
 	string map = file_data.toString();
