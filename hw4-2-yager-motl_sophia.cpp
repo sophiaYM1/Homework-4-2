@@ -43,6 +43,7 @@ int main(int argc, char *argv[])
         		}
 			//int char_count += line.length();
 			file_data["characters"] += line.length();
+			cout << file_data << endl;
 			//for(int index=0; line[index] != '\0'; index++)
 			//{
         			//if(line[index]!=' ')
