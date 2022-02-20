@@ -35,7 +35,7 @@ int main(int argc, char *argv[])
   		}
 			cout << file_data << endl;
 		}
-		for (character = getc(text); character != EOF; character = getc(text))
+		for (char character = getc(text); character != EOF; character = getc(text))
 		{
      			file_data["characters"] += 1;
 		}
