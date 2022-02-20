@@ -1,7 +1,6 @@
 #include <iostream>
 #include <iomanip>
-//#include <string>
-#include <stdio.h> 
+//#include <stdio.h> 
 #include "map.h"
 #include "vector.h"
 #include <sstream>
