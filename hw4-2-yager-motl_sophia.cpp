@@ -34,7 +34,6 @@ int main(int argc, char *argv[])
 			file_data["lines"] += 1;
   		}
 			cout << file_data << endl;
-		}
 		//for (char character = getc(text); character != EOF; character = getc(text))
 		for (int element = 0; element <= line.length(); element ++)
 		{
