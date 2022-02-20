@@ -41,13 +41,15 @@ int main(int argc, char *argv[])
        		 	{
             			file_data["words"] += 1;
         		}
-			for(int index=0; line[index] != '\0'; index++)
-			{
-        			if(line[index]!=' ')
-       			{
-           			file_data["characters"] += 1;
-        		}
-    			}
+			//int char_count += line.length();
+			file_data["characters"] += line.length()
+			//for(int index=0; line[index] != '\0'; index++)
+			//{
+        			//if(line[index]!=' ')
+       			//{
+           			//file_data["characters"] += 1;
+        		//}
+    			//}
   		}
 			cout << file_data << endl;
 	}
