@@ -46,10 +46,8 @@ int main(int argc, char *argv[])
 				}
         		}
   		}
-			cout << file_data << endl;
-	}
-	
-
+		cout << file_data << endl;
+	//Output
 	string num_1 = to_string (file_data["lines"]) ;
 	string num_2 = to_string (file_data["words"]) ;
 	string num_3 = to_string (file_data["characters"]) ;
@@ -57,7 +55,7 @@ int main(int argc, char *argv[])
 	cout << "Num of lines" << setw(6) << num_1 << endl;
 	cout << "Num of words" << setw(6) << num_2 << endl;
 	cout << "Num of characters" << setw(6) << num_3 << endl;
-	
+	}
 	text.close();
   	return 0;
 }
