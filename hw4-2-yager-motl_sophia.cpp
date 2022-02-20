@@ -38,6 +38,7 @@ int main(int argc, char *argv[])
 		//for (char character = getc(text); character != EOF; character = getc(text))
 		for (int element = 0; element <= line.length(); element ++)
 		{
+			cout << element << endl;
      			file_data["characters"] += 1;
 			cout << file_data << endl;
 		}
