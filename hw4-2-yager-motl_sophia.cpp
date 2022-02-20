@@ -41,7 +41,9 @@ int main(int argc, char *argv[])
        		 	{
             			file_data["words"] += 1;
 				for (int index = 0; index < line.length(); index++)
+				{
 					file_data["characters"] += 1
+				}
         		}
 			//file_data["characters"] += line.length();
   		}
